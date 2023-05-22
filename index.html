@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
 
     <!--Google fonts-->
     <!--Body font-->
@@ -12,9 +13,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 
-
-
     <title>Mentally®</title>
+
 </head>
 <body>
 
@@ -29,29 +29,47 @@
             <div class="right">
 
                 <ul class="list-options">
-                    <li>
-                        <a href="#" class="option">About Us</a>
+                    <li class="options">
+                        <a href="#">About Us</a>
                     </li>
     
-                    <li>
-                        <a href="#" class="option">Team</a>
+                    <li class="options">
+                        <a href="#" >Team</a>
                     </li>
     
-                    <li>
-                        <a href="#" class="option">Careers</a>
+                    <li class="options">
+                        <a href="#" >Careers</a>
                     </li>
 
-                    <li>
-                        <a href="#" class="option">Blog</a>
+                    <li class="options">
+                        <a href="#" >Blog</a>
                     </li>
 
-                    <li>
-                        <a href="#" class="option">More</a>
+                    <li class="options">
+                        <a href="#" >Contact Us</a>
+                    </li>
+
+                    <li class="options">
+                        <a href="#" >FAQ</a>
+                    </li>
+
+                    <li class="options">
+                        <a href="#" >Advise</a>
+                    </li>
+
+                    <li class="options">
+                        <a href="#" >Get Help</a>
                     </li>
 
                 </ul>
 
-                <button type="button" value="find-counselling" class="find-counselling">Find Counselling</button>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+
+                <button type="button" value="find-counselling" class="find-counselling" onclick="bookCounselling()">Find Counselling</button>
                 
             </div>
 
@@ -71,8 +89,6 @@
         
     </section>
 
-
-    
     
     <!-- <section class="page-2">
 
