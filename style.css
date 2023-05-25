@@ -20,7 +20,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     border-radius: 0 0 25px 25px;
-    padding: 0 40px;
+    padding: 0 0;
     margin: 0 auto;
     box-shadow: 0px 1px 35px 0px #D17E7E;
 
@@ -28,14 +28,15 @@ nav{
 }
 
 .left{
-    width:40%;
+    padding-left: 30px;
 }
 
 .right{
-    width: 100%;
+    width: 80%;
     display: flex;
     justify-content: right;
     align-items: center;
+    padding-right: 30px;
 }
 
 .list-options{
@@ -61,7 +62,7 @@ nav{
 
 
 .find-counselling{
-    margin-left: 30px;
+    margin-left: 20px;
     border-radius: 30px;
     width: 160px;
     height: 40px;
@@ -99,6 +100,7 @@ nav{
 
 }
 
+
 .landing-page{
     background: #d43d3d7a;
     width: 100%;
@@ -112,6 +114,7 @@ nav{
   border-radius: 15px;
   padding-top: 0;
   margin: 70px 115px;
+  
 }
 
 .abt-desc div{
@@ -119,19 +122,84 @@ nav{
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  min-width: auto;
   
 }
 
 .abt-desc img{
-  width: 400px;
+  /* width: 400px; */
   height: 400px;
   
 }
 
 
 
+/* Mobile styles */
+@media (max-width: 1300px) {
+  .list-options {
+      display: none;
+  }
+
+  .hamburger {
+      display: block;
+      cursor: pointer;
+  }
+
+  nav{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+  }
+
+  .right{
+      display: flex;
+      justify-content: space-around;
+      position: relative;
+  }
+
+  .find-counselling{
+      margin-right: 30px;
+  }
+
+  .list-options.show-menu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position:absolute;
+      right: 0px;
+      top: 25px;
+      background-color: #F0CCD3;
+      padding: 20px 25px;
+      gap:50px;
+  }
+}
 
 
+
+
+@media(max-width: 1000px){
+  .abt-desc{
+    display: grid;
+    width: 80%;
+    min-width: 300px;
+    margin: 70px auto;
+  }
+
+  .abt-desc img{
+    display: grid;
+    width: 100%;
+    width:100%;
+    
+  }
+
+  nav{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+}
 
 
 
